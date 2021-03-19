@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt"
+>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>Sidebar menu responsive</title>
+    </head>
+    <body id="body-pd">
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+
+            <div class="header__img">
+                <img src="img/perfil.jpg" alt="">
+            </div>
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <i class='bx bx-layer nav__logo-icon'></i>
+                        <span class="nav__logo-name">CRCJUD</span>
+                    </a>
+
+                    <div class="nav__list">
+                        <a href="#" class="nav__link active">
+                        <i class='bx bx-grid-alt nav__icon' ></i>
+                            <span class="nav__name">Dashboard</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-user nav__icon' ></i>
+                            <span class="nav__name">Users</span>
+                        </a>
+                        
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-message-square-detail nav__icon' ></i>
+                            <span class="nav__name">Messages</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bookmark nav__icon' ></i>
+                            <span class="nav__name">Favorites</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-folder nav__icon' ></i>
+                            <span class="nav__name">Data</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bar-chart-alt-2 nav__icon' ></i>
+                            <span class="nav__name">Analytics</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#" class="nav__link">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+	<div class="conteudo">
+        <h1>Components</h1>
+        <div class="cards">
+        <div class="card">
+         <tbody>
+            <tr class="result" data-th-each="movie : ${permissao}">
+                <td>[[${movie.nome}]]</td>
+                <br>
+
+            </tr>
+            </tbody>
+        </div>
+         <div class="card">
+          <h1>Components</h1>
+        </div>
+           <div class="card">
+           <img style="    width: 30px;" src="https://sistema.registrocivil.org.br/crcjud/imagens/icones/2aViaCertidao.png">
+          <h1>Components</h1>
+        </div>
+        </div>
+        <div class="conteudo-central">
+        <h1 style="text-align: center;">Usuários</h1>
+        
+        <form action="" style="margin: 40px;">
+        <div class="form-column" >
+        <p>Nome:</p>
+        <input type="text" style="width: 100%">
+        </div>
+        <div class="form-column">
+        <p>CPF:</p>
+        <input type="text">
+        </div>
+        <div class="form-column">
+        <p>Telefone:</p>
+        <input type="text" style="width: 70%">
+        </div>
+        <div class="form-column">
+        <p>E-mail:</p>
+        <input type="text" style="width: 70%">
+        </div>
+        <div class="form-column">
+        <p>UF:</p>
+        <input type="text">
+         </div>
+        </form>
+        </div>
+        </div>
+        <!--===== MAIN JS =====-->
+        <script src="/js/main.js"></script>
+    </body>
+</html>
